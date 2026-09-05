@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Join our free AI WhatsApp Community for practical AI tools, updates, prompts and business use cases.">
+<title>AIwithDhaval — Free AI WhatsApp Community</title>
+<style>
+:root{
+  --bg:#050505; --card:#151515; --card2:#1d1d1d; --line:#303030;
+  --text:#f7f7f7; --muted:#a4a4a4; --accent:#fff; --green:#25D366;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--text);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+.container{width:min(1080px,92%);margin:auto}
+.topbar{
+  position:sticky;top:12px;z-index:20;margin:12px auto 0;
+  width:min(1080px,92%);border:1px solid #333;border-radius:22px;
+  background:rgba(5,5,5,.88);backdrop-filter:blur(14px);
+  padding:10px 12px 10px 18px;display:flex;align-items:center;justify-content:space-between;
+}
+.brand{font-weight:800;font-size:20px;letter-spacing:-.5px}
+.topbtn,.hero-btn,.submit-btn,.join-btn{
+  border:0;border-radius:999px;padding:14px 22px;font-weight:800;
+  cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;
+}
+.topbtn,.hero-btn,.submit-btn{background:#fff;color:#050505}
+.hero{padding:92px 0 70px;text-align:center}
+.pill{display:inline-block;border:1px solid #454545;border-radius:999px;padding:9px 16px;color:#cfcfcf;font-weight:700}
+h1{font-size:clamp(48px,8vw,92px);line-height:.95;letter-spacing:-4px;margin:22px 0 20px}
+.hero h2{font-size:clamp(22px,4vw,38px);margin:0 0 20px;letter-spacing:-1px}
+.hero p{max-width:720px;margin:0 auto 28px;color:var(--muted);font-size:18px;line-height:1.65}
+.trust{margin-top:18px;color:#858585;font-size:13px}
+.section{padding:65px 0}
+.section-title{text-align:center;font-size:40px;letter-spacing:-1.5px;margin:0 0 35px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.feature{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:28px;min-height:190px}
+.icon{width:48px;height:48px;border-radius:50%;background:#2a2a2a;display:grid;place-items:center;font-size:23px;margin-bottom:24px}
+.feature h3{margin:0 0 9px;font-size:22px}.feature p{margin:0;color:var(--muted);line-height:1.55}
+.form-wrap{max-width:720px;margin:auto;background:var(--card);border:1px solid var(--line);border-radius:28px;padding:30px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{margin-bottom:16px}.field.full{grid-column:1/-1}
+label{display:block;font-size:14px;font-weight:700;margin:0 0 8px;color:#ddd}
+input,select,textarea{
+  width:100%;background:#111;color:#fff;border:1px solid #353535;border-radius:14px;
+  padding:15px 16px;font-size:16px;outline:none;
+}
+input:focus,select:focus,textarea:focus{border-color:#777}
+textarea{min-height:105px;resize:vertical}
+.note{font-size:12px;color:#777;margin:8px 0 18px}
+.consent{display:flex;gap:10px;align-items:flex-start;color:#aaa;font-size:13px;line-height:1.45;margin:8px 0 20px}
+.consent input{width:auto;margin-top:3px}
+.submit-btn{width:100%;font-size:16px}
+.success{display:none;text-align:center;padding:22px 8px}
+.success .check{font-size:46px}.success h3{font-size:30px;margin:10px 0}
+.success p{color:var(--muted);line-height:1.6}
+.join-btn{background:var(--green);color:#062b12;font-size:17px;padding:16px 26px}
+.small{font-size:12px;color:#777;margin-top:14px}
+footer{border-top:1px solid #202020;padding:30px 0;color:#777;text-align:center;font-size:13px}
+@media(max-width:760px){
+  .grid,.form-grid{grid-template-columns:1fr}
+  .field.full{grid-column:auto}
+  h1{letter-spacing:-2.5px}.hero{padding-top:70px}
+  .topbar{top:8px}.brand{font-size:17px}.topbtn{padding:11px 16px}
+}
+
+.founder{display:grid;grid-template-columns:220px 1fr;gap:34px;align-items:center;max-width:850px;margin:auto;background:var(--card);border:1px solid var(--line);border-radius:28px;padding:28px}
+.founder-photo{width:220px;height:260px;object-fit:cover;border-radius:22px;border:1px solid #3b3b3b}
+.founder-kicker{color:#aaa;font-size:14px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px}
+.founder h3{font-size:36px;margin:8px 0 4px;letter-spacing:-1px}.founder-role{color:#bbb;font-size:18px;margin-bottom:16px}
+.founder p{color:var(--muted);line-height:1.7;margin:0}
+.brand-line{font-size:15px;color:#999;margin-top:12px}
+@media(max-width:760px){.founder{grid-template-columns:1fr;text-align:center}.founder-photo{width:170px;height:200px;margin:auto}.founder h3{font-size:30px}}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">AIwithDhaval</div>
+  <a class="topbtn" href="#register">Join Community →</a>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container">
+    <span class="pill">FREE · WhatsApp Community</span>
+    <h1>Stay Ahead<br>with AI.</h1>
+    <h2>Your practical AI advantage.</h2>
+    <p>Skip the noise. Get useful AI tools, updates, prompts, workflows and real-world ideas delivered straight to our WhatsApp Community.</p>
+    <a class="hero-btn" href="#register">Join for Free →</a>
+    <div class="trust">🔒 Your details are used only for community registration.</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">What You'll Get</h2>
+    <div class="grid">
+      <article class="feature">
+        <div class="icon">⚡</div><h3>AI Updates</h3>
+        <p>Stay current with useful AI launches, features, tools and trends that actually matter.</p>
+      </article>
+      <article class="feature">
+        <div class="icon">◫</div><h3>Curated Resources</h3>
+        <p>Handpicked AI tools, prompts, guides and tutorials you can use in real life.</p>
+      </article>
+      <article class="feature">
+        <div class="icon">✦</div><h3>Practical Use Cases</h3>
+        <p>Discover how AI can save time, improve work and help grow a business or career.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Meet the Founder</h2>
+    <div class="founder">
+      <img class="founder-photo" src="dhaval-jadav.jpeg" alt="Dhaval Jadav — Founder of AIwithDhaval">
+      <div>
+        <div class="founder-kicker">Founder · AIwithDhaval</div>
+        <h3>Dhaval Jadav</h3>
+        <div class="founder-role">Founder, AIwithDhaval</div>
+        <p>Helping people and businesses understand AI in a simple, practical and useful way — from everyday productivity to automation, content, marketing and business growth.</p>
+        <div class="brand-line">Learn · Create · Automate · Grow</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="register">
+  <div class="container">
+    <h2 class="section-title">Join the Community</h2>
+    <div class="form-wrap">
+      <form id="communityForm">
+        <div class="form-grid">
+          <div class="field">
+            <label for="name">Full Name *</label>
+            <input id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email Address *</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          </div>
+          <div class="field">
+            <label for="phone">Mobile Number *</label>
+            <input id="phone" name="phone" type="tel" inputmode="numeric" placeholder="+91 98765 43210" required>
+          </div>
+          <div class="field">
+            <label for="work">What best describes you? *</label>
+            <select id="work" name="work" required>
+              <option value="">Select one</option>
+              <option>Self Employed</option>
+              <option>Business Owner</option>
+              <option>Salaried / Job</option>
+              <option>Student</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="experience">AI Experience *</label>
+            <select id="experience" name="experience" required>
+              <option value="">Select one</option>
+              <option>Beginner</option>
+              <option>Basic Knowledge</option>
+              <option>Intermediate</option>
+              <option>Advanced</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="goal">Where do you want to use AI?</label>
+            <textarea id="goal" name="goal" placeholder="Example: marketing, business automation, content, sales, office work..."></textarea>
+          </div>
+        </div>
+
+        <div class="consent">
+          <input id="consent" type="checkbox" required>
+          <span>I agree to submit these details for community registration and receive community-related information.</span>
+        </div>
+
+        <button class="submit-btn" type="submit">REGISTER & CONTINUE →</button>
+        <div class="note">Free to join. No payment required.</div>
+      </form>
+
+      <div class="success" id="success">
+        <div class="check">🎉</div>
+        <h3>You're registered!</h3>
+        <p>Your registration is complete. Tap below to join the AI WhatsApp Community.</p>
+        <a class="join-btn" href="https://chat.whatsapp.com/L9YSwjTOGRP2E54IWBmEaz" target="_blank" rel="noopener">
+          💬 JOIN WHATSAPP COMMUNITY
+        </a>
+        <div class="small">If WhatsApp does not open, tap the button again.</div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>© 2026 <strong>AIwithDhaval</strong> · Founded by Dhaval Jadav · Built for practical AI learning</footer>
+
+<script>
+/*
+  OPTIONAL GOOGLE SHEETS CONNECTION
+  ---------------------------------
+  Put your Google Apps Script Web App URL below.
+  Example:
+  const SHEETS_ENDPOINT = "https://script.google.com/macros/s/XXXXXXXX/exec";
+*/
+const SHEETS_ENDPOINT = "";
+
+const form = document.getElementById("communityForm");
+const success = document.getElementById("success");
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const data = {
+    name: document.getElementById("name").value.trim(),
+    email: document.getElementById("email").value.trim(),
+    phone: document.getElementById("phone").value.trim(),
+    work: document.getElementById("work").value,
+    experience: document.getElementById("experience").value,
+    goal: document.getElementById("goal").value.trim(),
+    registeredAt: new Date().toISOString()
+  };
+
+  const button = form.querySelector("button");
+  button.disabled = true;
+  button.textContent = "REGISTERING...";
+
+  try {
+    if (SHEETS_ENDPOINT) {
+      await fetch(SHEETS_ENDPOINT, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {"Content-Type":"application/json"},
+        body: JSON.stringify(data)
+      });
+    }
+
+    form.style.display = "none";
+    success.style.display = "block";
+    document.getElementById("register").scrollIntoView({behavior:"smooth"});
+  } catch (err) {
+    // Still allow the visitor to join if the optional sheet connection fails.
+    form.style.display = "none";
+    success.style.display = "block";
+  }
+});
+</script>
+</body>
+</html>
